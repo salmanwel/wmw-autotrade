@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Karma Shop</title>
+	<title>WMC Autotrade</title>
 	<!--
 		CSS
 		============================================= -->
@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
-<body ng-controller="PhoneListController">
+<body ng-controller="WMCHomeController">
 
 	<!-- Start Header Area -->
 	<header class="header_area sticky-header">
@@ -113,10 +113,8 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1>WMC Autotrade <br>Company</h1>
-									<p>Section 1.1. Home Page - Has some intro details about the company
-									   Need data from the WMC folks which can be added here
-									   .This is in Home page
+									<h1>{{homePageData.heading}}<br>{{homePageData.heading2}}</h1>
+									<p>{{homePageData.caption}}
 									</p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="ti-id-badge"></span></a>
@@ -126,7 +124,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/sam.jpeg" alt="">
+									<img class="img" src="img/banner/sam.jpeg" alt="">
 								</div>
 							</div>
 						</div>
@@ -161,43 +159,13 @@
 		<div class="container">
 			<div class="row features-inner">
 				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="col-lg-3 col-md-6 col-sm-6" ng-repeat="service in homePageData.services">
 					<div class="single-features">
 						<div class="f-icon">
-							<img src="img/features/f-icon1.png" alt="">
+								<img src={{service.service_img}} alt="">
 						</div>
-						<h6>Free Delivery</h6>
-						<p>Section 1.2.1</p>
-					</div>
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<img src="img/features/f-icon2.png" alt="">
-						</div>
-						<h6>Return Policy</h6>
-						<p>Section 1.2.2</p>
-					</div>
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<img src="img/features/f-icon3.png" alt="">
-						</div>
-						<h6>Dedicated Customer Support</h6>
-						<p>Section 1.2.3</p>
-					</div>
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<img src="img/features/f-icon4.png" alt="">
-						</div>
-						<h6>Easy Payment Options</h6>
-						<p>Section 1.2.4</p>
+						<h6>{{service.service_heading}}</h6>
+						<p>{{service.service_description}}</p>
 					</div>
 				</div>
 			</div>
