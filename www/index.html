@@ -51,7 +51,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Our Cars</a>
 								<ul class="dropdown-menu">
@@ -61,15 +61,17 @@
 									<li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
 									<li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
 								</ul>
-							</li>
-							 <li class="nav-item submenu dropdown">
+							</li> -->
+							<li class="nav-item"><a class="nav-link" href="category.html">Our Cars</a></li>
+							<li class="nav-item"><a class="nav-link" href="single-blog.html">About Us</a></li>
+							 <!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">About</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 								</ul>
-							</li>
+							</li> -->
 						<!--	<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
@@ -81,12 +83,12 @@
 							</li> -->
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
+						<!-- <ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
 							<li class="nav-item">
 								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 			</nav>
@@ -113,18 +115,18 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1>{{homePageData.heading}}<br>{{homePageData.heading2}}</h1>
-									<p>{{homePageData.caption}}
+									<h1>{{homePageData.heading1}}<br>{{homePageData.heading12}}</h1>
+									<p>{{homePageData.caption2}}
 									</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="ti-id-badge"></span></a>
+										<a class="add-btn" href="single-blog.html"><span class="ti-id-badge"></span></a>
 										<span class="add-text text-uppercase">About Us</span>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img" src="img/banner/sam.jpeg" alt="">
+									<img class="img" src={{homePageData.banner_img1}} alt="">
 								</div>
 							</div>
 						</div>
@@ -132,18 +134,17 @@
 						<div class="row single-slide">
 							<div class="col-lg-5">
 								<div class="banner-content">
-									<h1>Nike New <br>Collection!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+									<h1>{{homePageData.heading2}}<br>{{homePageData.heading22}}</h1>
+									<p>{{homePageData.caption2}}
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Add to Bag</span>
+										<a class="add-btn" href="contact.html"><span class="ti-id-badge"></span></a>
+										<span class="add-text text-uppercase">Contact Us</span>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
+									<img class="img-fluid" src="{{homePageData.banner_img2}}" alt="">
 								</div>
 							</div>
 						</div>
@@ -162,7 +163,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6" ng-repeat="service in homePageData.services">
 					<div class="single-features">
 						<div class="f-icon">
-								<img src={{service.service_img}} alt="">
+								<img src="{{service.service_img}}" alt="">
 						</div>
 						<h6>{{service.service_heading}}</h6>
 						<p>{{service.service_description}}</p>
@@ -177,7 +178,6 @@
 	<section class="category-area">
 		<div class="container">
 			<h3 class="text-heading">Featured Cars</h3>
-			<span><p>Section 1.3 -- This text would be removed</p></span>
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-12">
 					<div class="row">
@@ -187,7 +187,7 @@
 								<img class="img-fluid w-100" src="img/category/cw1.jpg" alt="">
 								<a href="img/category/c1.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Sneaker for Sports</h6>
+										<h6 class="deal-title">2019 MODEL TOYOTA HILUX DOUBLE CAB PICKUP</h6>
 									</div>
 								</a>
 							</div>
@@ -198,7 +198,7 @@
 								<img class="img-fluid w-100" src="img/category/cw2.jpeg" alt="">
 								<a href="img/category/c2.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Benz G-63 2018</h6>
+										<h6 class="deal-title">Benz G-63 4L</h6>
 									</div>
 								</a>
 							</div>
@@ -206,10 +206,10 @@
 						<div class="col-lg-4 col-md-4">
 							<div class="single-deal">
 								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/category/cw2.jpeg" alt="">
+								<img class="img-fluid w-100" src="img/category/cw3.jpg" alt="">
 								<a href="img/category/c3.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Product for Couple</h6>
+										<h6 class="deal-title">Lexus LX450d</h6>
 									</div>
 								</a>
 							</div>
@@ -220,7 +220,7 @@
 								<img class="img-fluid w-100" src="img/category/cw4.jpg" alt="">
 								<a href="img/category/c4.jpg" class="img-pop-up" target="_blank">
 									<div class="deal-details">
-										<h6 class="deal-title">Sneaker for Sports</h6>
+										<h6 class="deal-title">Land Cruiser Diesel GXR</h6>
 									</div>
 								</a>
 							</div>
@@ -233,7 +233,7 @@
 						<img class="img-fluid w-100" src="img/category/cw5.jpg" alt="">
 						<a href="img/category/c5.jpg" class="img-pop-up" target="_blank">
 							<div class="deal-details">
-								<h6 class="deal-title">Sneaker for Sports</h6>
+								<h6 class="deal-title">Land Cruiser Prado</h6>
 							</div>
 						</a>
 					</div>
@@ -241,15 +241,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End category Area -->
-
-			<ul>
-			  <li ng-repeat="phone in phones">
-				<span>{{phone.name}}</span>
-				<p>{{phone.snippet}}</p>
-			  </li>
-			</ul>
-		  
+	<!-- End category Area -->		  
 
 	<!-- start product Area -->
 	<section class="owl-carousel active-product-area section_gap">
@@ -260,227 +252,29 @@
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
 							<h1>Exclusive Stocks</h1>
-							<p>Section 1.4.1 Here we can show our exclusive 8 cars stocks and their details. The user can able to 
-								get a contact number or email id or can see the car details by clicking the three buttons at bottom of the 
-								car pic
+							<p>Our exclusive stocks which can be bought in a whim
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
+					<div class="col-lg-3 col-md-6" ng-repeat="ex_stock in homePageData.exclusive_stocks">
 						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw1.jpg" alt="">
+							<img class="img-fluid" src="{{ex_stock.car_img}}" alt="">
 							<div class="product-details">
-								<h6>Toyota Hilux</h6>
+								<h6>{{ex_stock.car_name}}</h6>
 								<div class="price">
-									<h6>2009</h6>
-									<h6>17,000 Kms</h6>
+									<h6>{{ex_stock.car_field1}}</h6>
+									<h6>{{ex_stock.car_field2}}</h6>
 								</div>
 								<div class="prd-bottom">
 
-									<a href="" class="social-info">
+									<a href="contact.html" class="social-info">
 										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
+										<p class="hover-text">Contact Sales</p>
 									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-							<div class="product-details">
-								<h6>Mercedes Bens AMG</h6>
-								<div class="price">
-									<h6>2018</h6>
-									<h6>21,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw3.jpg" alt="">
-							<div class="product-details">
-								<h6>Toyota PickUp</h6>
-								<div class="price">
-									<h6>2012</h6>
-									<h6>41,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw1.jpg" alt="">
-							<div class="product-details">
-								<h6>Toyota Hilux</h6>
-								<div class="price">
-									<h6>2009</h6>
-									<h6>17,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-							<div class="product-details">
-								<h6>Mercedes Bens AMG</h6>
-								<div class="price">
-									<h6>2018</h6>
-									<h6>21,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw3.jpg" alt="">
-							<div class="product-details">
-								<h6>Toyota PickUp</h6>
-								<div class="price">
-									<h6>2012</h6>
-									<h6>41,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw1.jpg" alt="">
-							<div class="product-details">
-								<h6>Toyota Hilux</h6>
-								<div class="price">
-									<h6>2009</h6>
-									<h6>17,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="ti-email"></span>
-										<p class="hover-text">Email</p>
-									</a>
-									<a href="" class="social-info">
-										<span class="lnr lnr-move"></span>
-										<p class="hover-text">view more</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- single product -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single-product">
-							<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-							<div class="product-details">
-								<h6>Mercedes Bens AMG</h6>
-								<div class="price">
-									<h6>2018</h6>
-									<h6>21,000 Kms</h6>
-								</div>
-								<div class="prd-bottom">
-
-									<a href="" class="social-info">
-										<span class="ti-headphone-alt"></span>
-										<p class="hover-text">Call Sales</p>
-									</a>
-									<a href="" class="social-info">
+									<a href="contact.html" class="social-info">
 										<span class="ti-email"></span>
 										<p class="hover-text">Email</p>
 									</a>
@@ -502,227 +296,29 @@
 						<div class="col-lg-6 text-center">
 							<div class="section-title">
 								<h1>Latest Stocks</h1>
-								<p>Section 1.4.2 Here we can show our latest 8 cars stocks and their details. The user can able to 
-									get a contact number or email id or can see the car details by clicking the three buttons at bottom of the 
-									car pic
+								<p>Our Latest stocks are displayed below
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3 col-md-6" ng-repeat="latest_stock in homePageData.latest_stocks">
 							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw1.jpg" alt="">
+								<img class="img-fluid" src="{{latest_stock.car_img}}" alt="">
 								<div class="product-details">
-									<h6>Toyota Hilux</h6>
+									<h6>{{latest_stock.car_name}}</h6>
 									<div class="price">
-										<h6>2009</h6>
-										<h6>17,000 Kms</h6>
+										<h6>{{latest_stock.car_field1}}</h6>
+										<h6>{{latest_stock.car_field2}}</h6>
 									</div>
 									<div class="prd-bottom">
 	
-										<a href="" class="social-info">
+										<a href="contact.html" class="social-info">
 											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
+											<p class="hover-text">Contact Sales</p>
 										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-								<div class="product-details">
-									<h6>Mercedes Bens AMG</h6>
-									<div class="price">
-										<h6>2018</h6>
-										<h6>21,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw3.jpg" alt="">
-								<div class="product-details">
-									<h6>Toyota PickUp</h6>
-									<div class="price">
-										<h6>2012</h6>
-										<h6>41,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw1.jpg" alt="">
-								<div class="product-details">
-									<h6>Toyota Hilux</h6>
-									<div class="price">
-										<h6>2009</h6>
-										<h6>17,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-								<div class="product-details">
-									<h6>Mercedes Bens AMG</h6>
-									<div class="price">
-										<h6>2018</h6>
-										<h6>21,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw3.jpg" alt="">
-								<div class="product-details">
-									<h6>Toyota PickUp</h6>
-									<div class="price">
-										<h6>2012</h6>
-										<h6>41,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw1.jpg" alt="">
-								<div class="product-details">
-									<h6>Toyota Hilux</h6>
-									<div class="price">
-										<h6>2009</h6>
-										<h6>17,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="ti-email"></span>
-											<p class="hover-text">Email</p>
-										</a>
-										<a href="" class="social-info">
-											<span class="lnr lnr-move"></span>
-											<p class="hover-text">view more</p>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- single product -->
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="img/product/pw2.jpeg" alt="">
-								<div class="product-details">
-									<h6>Mercedes Bens AMG</h6>
-									<div class="price">
-										<h6>2018</h6>
-										<h6>21,000 Kms</h6>
-									</div>
-									<div class="prd-bottom">
-	
-										<a href="" class="social-info">
-											<span class="ti-headphone-alt"></span>
-											<p class="hover-text">Call Sales</p>
-										</a>
-										<a href="" class="social-info">
+										<a href="contact.html" class="social-info">
 											<span class="ti-email"></span>
 											<p class="hover-text">Email</p>
 										</a>
@@ -747,8 +343,8 @@
 				<div class="col-lg-6 no-padding exclusive-left">
 					<div class="row clock_sec clockdiv" id="clockdiv">
 						<div class="col-lg-12">
-							<h1>Exclusive Hot Deal Ends Soon!</h1>
-							<p>Section 1.5.1 If we run some sales campaign, it can be displayed here</p>
+							<h1>Purchase latest cars!</h1>
+							<p>We offer best price. Contact us for more options</p>
 						</div>
 						<div class="col-lg-12">
 							<div class="row clock-wrap">
@@ -771,7 +367,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="" class="primary-btn">Checkout Now</a>
+					<a href="" class="primary-btn">Contact Now</a>
 				</div>
 				<div class="col-lg-6 no-padding exclusive-right">
 					<div class="active-exclusive-product-slider">
@@ -780,10 +376,10 @@
 							<img class="img-fluid" src="img/product/ew-p1.jpg" alt="">
 							<div class="product-details">
 								<div class="price">
-									<h6>Section 1.5.2</h6>
-									<h6>The cars in campaign</h6>
+									<h6>6 Speed AT</h6>
+									<h6>Available for sale</h6>
 								</div>
-								<h4>Toyota Fortuner</h4>
+								<h4>Toyota Prado TXL</h4>
 								<div class="add-bag d-flex align-items-center justify-content-center">
 									<a class="add-btn" href=""><span class="ti-headphone-alt"></span></a>
 									<span class="add-text text-uppercase">Contact Us</span>
@@ -792,13 +388,13 @@
 						</div>
 						<!-- single exclusive carousel -->
 						<div class="single-exclusive-slider">
-								<img class="img-fluid" src="img/product/ew-p1.jpg" alt="">
+								<img class="img-fluid" src="img/product/ew-p2.jpg" alt="">
 								<div class="product-details">
 									<div class="price">
-										<h6>2016</h6>
-										<h6>21,000 Kms</h6>
+										<h6>4.5L Diesel</h6>
+										<h6>Available for sale</h6>
 									</div>
-									<h4>Toyota Fortuner</h4>
+									<h4>Lexus LX 450</h4>
 									<div class="add-bag d-flex align-items-center justify-content-center">
 										<a class="add-btn" href=""><span class="ti-headphone-alt"></span></a>
 										<span class="add-text text-uppercase">Contact Us</span>
@@ -817,19 +413,19 @@
 		<div class="container">
 			<div class="row">
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/1.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/brand/1.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/2.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/brand/2.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/3.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/brand/3.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/4.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/brand/4.jpg" alt="">
 				</a>
 				<a class="col single-img" href="#">
-					<img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/brand/5.jpg" alt="">
 				</a>
 			</div>
 		</div>
@@ -837,7 +433,7 @@
 	<!-- End brand Area -->
 
 	<!-- Start related-product Area -->
-	<section class="related-product-area section_gap_bottom">
+	<!-- <section class="related-product-area section_gap_bottom">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
@@ -971,7 +567,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End related-product Area -->
 
 	<!-- start footer Area -->
@@ -982,7 +578,7 @@
 					<div class="single-footer-widget">
 						<h6>About Us</h6>
 						<p>
-							Section 1.7.1 This is Footer section. 
+							We're experience in trading all types of cars. Come check us out for competitive and best priced vehicles.
 						</p>
 					</div>
 				</div>
