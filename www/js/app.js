@@ -151,7 +151,7 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
 
   };
 
-},
+});
 
 WMCWebApp.controller('WMCCategoryController', function PhoneListController($scope) {
 
@@ -251,6 +251,4 @@ WMCWebApp.controller('WMCCategoryController', function PhoneListController($scop
 
   };
 
-})
-
-);
+});
