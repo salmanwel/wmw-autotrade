@@ -19,11 +19,11 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
   $scope.homePageData = {
     heading1 : "WMC Autotrade",
     heading12 : "Company",
-    caption1 : "Section 1.1. Home Page - Has some intro details about the company Need data from the WMC folks which can be added here. This is in Home page",
+    caption1 : "WMC Auto Trade LLC is involved in worldwide buying and selling of brand new and pre-owned vehicles including Passenger Cars, SUV’s, Commercial Vehicles, Trucks and Buses, Construction Machinery, Agricultural and Heavy Equipments Etc",
     banner_img1 : "img/banner/banner1.jpeg", 
-    heading2 : "WMC Autotrade",
-    heading22 : "Company",
-    caption2 : "We are a Car Trading Company, offering latest vehicles with cheapest price. We are operating for around 7 years in Dubai and have nearly 30 years experience in the industry",
+    heading2 : "Services",
+    heading22 : "Offered",
+    caption2 : "With highly experienced and committed team of professionals is achieving new heights year after year. The car marques handled by the company include well-known names as Mercedes-Benz, Lexus, Toyota, Honda, Mitsubishi, Nissan, Hyundai, etc.",
     banner_img2 : "img/banner/banner2.jpg", 
     services : [
       {
@@ -31,8 +31,8 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
         service_description : "We are a brand you can trust",
         service_img : "img/features/f-icon1.png"
       }, {
-        service_heading : "Best Price",
-        service_description : "Competitive price for your purchase",
+        service_heading : "Logistics",
+        service_description : "Land, Air and Sea transportation",
         service_img : "img/features/f-icon2.png"
       }, {
         service_heading : "Dedicated Customer Support",
