@@ -19,7 +19,7 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
   $scope.homePageData = {
     heading1 : "WMC Autotrade",
     heading12 : "Company",
-    caption1 : "WMC Auto Trade LLC is involved in worldwide buying and selling of brand new and pre-owned vehicles including Passenger Cars, SUV’s, Commercial Vehicles, Trucks and Buses, Construction Machinery, Agricultural and Heavy Equipments Etc",
+    caption1 : "WMC Auto Trade LLC is involved in worldwide buying and selling of brand new and pre-owned vehicles including Passenger Cars, SUV’s, Commercial Vehicles, Trucks and Buses, Agricultural Etc",
     banner_img1 : "img/banner/banner1.jpeg", 
     heading2 : "Services",
     heading22 : "Offered",
@@ -122,7 +122,7 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
       },
       {
         car_name : "Toyota Hiace DX",
-        car_field1 : "4.5 L Diesel",
+        car_field1 : "2.7 L Diesel",
         car_field2 : "EURO4 - 6 Speed",
         car_img : "img/product/ex5.jpg"
       },
