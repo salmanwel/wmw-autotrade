@@ -19,7 +19,7 @@ WMCWebApp.controller('WMCHomeController', function PhoneListController($scope) {
   $scope.homePageData = {
     heading1 : "WMC Autotrade",
     heading12 : "Company",
-    caption1 : "WMC Auto Trade LLC is involved in worldwide buying and selling of brand new and pre-owned vehicles including Passenger Cars, SUV’s, Commercial Vehicles, Trucks and Buses, Agricultural Etc",
+    caption1 : "WMC Auto Trade LLC is involved in worldwide buying and selling of brand new and pre-owned vehicles including Passenger Cars, SUV’s, Commercial Vehicles, Trucks and Buses Etc",
     banner_img1 : "img/banner/banner1.jpeg", 
     heading2 : "Services",
     heading22 : "Offered",
